@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/NejcZdovc/comment-pr.git"
   },
-  "keywords": ["github action", "comment", "actions", "comment PR"],
+  "keywords": [
+    "github action",
+    "comment",
+    "actions",
+    "comment PR"
+  ],
   "author": "Nejc Zdovc",
   "license": "MIT",
   "bugs": {

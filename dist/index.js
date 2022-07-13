@@ -25,7 +25,7 @@ const getInputs = () => ({
 const getIdentifier = () => {
   const { identifier } = getInputs()
   if (!identifier) {
-    throw new Error('Identifier is should not be empty string, identifier is optional.')
+    throw new Error('Identifier should not be an empty string, identifier is optional.')
   }
   return `<!-- ${identifier} -->`
 }
@@ -93,10 +93,6 @@ const getClient = () => {
   const { githubToken } = getInputs()
   if (!githubToken) {
     throw new Error('No github token provided')
-  }
-
-  if (!_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.issue.number) {
-    throw new Error('This is not PR or commenting is disabled.')
   }
 
   const client = (0,_actions_github__WEBPACK_IMPORTED_MODULE_0__.getOctokit)(githubToken)
